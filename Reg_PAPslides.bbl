@@ -1,0 +1,26 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[DeLong and Lang(1992)]{delong_are_1992}
+J.~Bradford DeLong and Kevin Lang.
+\newblock Are all economic hypotheses false?
+\newblock \emph{Journal of Political Economy}, 100\penalty0 (6):\penalty0
+  1257--1272, December 1992.
+\newblock ISSN 0022-3808.
+\newblock URL \url{http://www.jstor.org/stable/2138833}.
+
+\bibitem[Fanelli(2012)]{fanelli_negative_2012}
+Daniele Fanelli.
+\newblock Negative results are disappearing from most disciplines and
+  countries.
+\newblock \emph{Scientometrics}, 90\penalty0 (3):\penalty0 891--904, March
+  2012.
+\newblock ISSN 0138-9130.
+\newblock \doi{10.1007/s11192-011-0494-7}.
+\newblock {WOS}:000300325800009.
+
+\end{thebibliography}

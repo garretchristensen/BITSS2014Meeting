@@ -1,0 +1,12 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Reg_PAPslides.aux
+The style file: plainnat.bst
+Illegal, another \bibstyle command---line 90 of file Reg_PAPslides.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 91 of file Reg_PAPslides.aux
+ : \bibdata
+ :         {Bibliography}
+I'm skipping whatever remains of this command
+Database file #1: Bibliography.bib
+(There were 2 error messages)

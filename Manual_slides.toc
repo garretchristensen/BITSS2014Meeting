@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Publication Bias}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{P-Hacking}{9}{0}{1}
+\beamer@sectionintoc {2}{Solutions}{13}{0}{2}
+\beamer@subsectionintoc {2}{1}{Registration}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Pre-Analysis Plan}{15}{0}{2}
+\beamer@sectionintoc {3}{Implementation}{16}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{20}{0}{4}
