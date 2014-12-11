@@ -111,14 +111,35 @@
 
 \begin{document}
 
+
+{ % all template changes are local to this group.
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+   \textbf{ Welcome to \#BITSS2014!}
+
+Agenda:
+
+Thursday 9A-12P Training
+
+Thursday 1P-5P Conference
+
+Friday 8:30A-2:30P Research Seminar
+
+  \end{frame}
+}     
+
+
+
 \begin{frame}
   \titlepage
 \end{frame}
+
 
 \begin{frame}{Outline}
   \tableofcontents
   % You might wish to add the option [pausesections]
 \end{frame}
+
 
 
 % Structuring a talk is a difficult task and the following structure
@@ -138,12 +159,13 @@
 % - If you omit details that are vital to the proof/implementation,
 %   just say so once. Everybody will be happy with that.
 
-\section{Motivation}
+\section{Problems}
 
 \subsection{Publication Bias}
 \begin{frame}{Publication Bias}%{Subtitles are optional.}
   % - A title should summarize the slide in an understandable fashion
   %   for anyone how does not follow everything on the slide itself.
+  \pause
   \begin{itemize}
   %\item
    %The distibution of published p-values jumps around .05 (Brodeur et al 2013).
@@ -154,7 +176,7 @@
   \item
     This is very unlikely to represent the true state of the universe.
   \item
-  	Data on the complete set of experiments run shows strong results are 40pp more likely to be published, and 60pp more likely to be written up. The file drawer problem is massive. (Franco, Malhotra, Simonovits 2014---see tomorrow)
+  	Data on the full set of experiments run with a large survey shows strong results are 40pp more likely to be published, and 60pp more likely to be written up. The file drawer problem is massive. (Franco, Malhotra, Simonovits 2014---see tomorrow)
   \end{itemize}
 \end{frame}
 
@@ -167,11 +189,11 @@ If we only write up/publish significant results, and we have no record of all th
 \begin{itemize}
 \pause
 \item
-Not something only evil people do. It can be subconcious.
-\item
 Also called fishing, researcher degrees of freedom, data mining, data massaging, or specification searching.
 \item
 Definition: flexibility in data analysis allows portrayal of \textit{anything} as below an arbitrary p-value threshhold; significance loses its meaning.
+\item
+Not something only evil people do. It can be subconcious---humans are really good at motivated reasoning.
 \end{itemize}
 \end{frame}
 
@@ -216,7 +238,7 @@ Listening to the Beatles' ``When I'm Sixty-Four'' makes you younger. (Simmons, N
 \item
 Inordinately many .049 p-values, and indordinately few .051's. (Brodeur et al 2013)
 \item 
-Political idiologues literally see in black and white (Nosek, Spies, Motyl 2012)
+Political ideologues literally see in black and white (Nosek, Spies, Motyl 2012)
 \end{itemize}
 \end{frame}
 
@@ -233,32 +255,7 @@ P-Hacking---Pre-Analysis Plans
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Registrations}
- \begin{itemize}
-  \item
-   Publicly stating all research you do, what hypotheses you test, prospectively.
-   %\item If we know every hypothesis test that is run on a given subject, we have a better idea of how seriously to take the significant results.
-  \item
-   Near universal adoption in medical RCTs. \url{http://clinicaltrials.gov}
-   \item Newer to social sciences, but:
-   \begin{itemize}
-   \item
-   	AEA registry \url{http://socialscienceregistry.org}
-   \item
-    EGAP registry \url{http://egap.org/design-registration}
-   \item 
-    3ie registry \url{http://ridie.3ieimpact.org}
-   \item
-   	Open Science Framework \url{http://osf.io}
-   	\begin{itemize}
-   	\item
-   	Open format
-   	\item
-   	Will soon sync with above
-   	\end{itemize}
-   \end{itemize}
-  \end{itemize}  
-\end{frame}
+
 
 
 \subsection{Pre-Analysis Plan}
@@ -348,24 +345,39 @@ From 3ie: ``A pre-analysis plan is a detailed description of the analysis to be 
 \end{frame}
 
 \begin{frame}{Examples}
-J-PAL Hypothesis Registry (9)
-
+Wide range of when to write and how detailed to make the plan. At the extreme level of detail you would have your entire code already written before you got any data.
+\begin{itemize}
+\item
+J-PAL Hypothesis Registry (11), see \url{http://www.povertyactionlab.org/Hypothesis-Registry}
+\item
+AEA Registry has relatively few, plentiful in EGAP.
+\item
+Casey, Glennerster, Miguel, ``\href{http://www.nber.org/data-appendix/w17012/GBF_Supplementary_Appendix_2011-10-07.pdf}{Reshaping Institutions: Evidence on Aid Impacts Using a Pre-Analysis Plan}'' \textit{QJE} 2012. (\href{http://http://eml.berkeley.edu/~emiguel/pdfs/miguel_gbf.pdf}{Paper},\href{http://www.nber.org/data-appendix/w17012/GBF_Supplementary_Appendix_2011-10-07.pdf}{Plan})
+\begin{itemize}
+ \item Government-sponsored program.
+ \item Broad program (Community Driven Development)
+ \item Broad outcomes (trust, public goods, public services, community groups, information, participation, crime, welfare, attitudes)
+ \end{itemize} 
+\end{itemize} 
 \end{frame}
-%\section{Implementation}
-%\begin{frame}{AEA Trial Registration}
-%\end{frame} 
-%\begin{frame}{EGAP Registration}
-%\end{frame}
-%\begin{frame}{3ie Registration}
-%\end{frame}
-%\begin{frame}{Open Science Framework}
-%\end{frame}
+
+{ % all template changes are local to this group.
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+         \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+                \includegraphics[width=\paperwidth]{GoBifo1.PNG}
+            };
+        \end{tikzpicture}
+     \end{frame}
+}
 
 \section{Conclusion}
 \begin{frame}{Conclusion}
+\pause
  \begin{itemize}
  \item
-  Not just for RCTs. 
+  Neither registration nor pre-analysis plans are limited to randomized trials. 
  \item
   Spectrum from confirmatory to exploratory research, all has value.
  \item

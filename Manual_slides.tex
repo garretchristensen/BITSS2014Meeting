@@ -28,14 +28,15 @@
 
 \mode<presentation>
 {
-  \usetheme{Warsaw}
+  \usetheme{Berkeley}
   % or ...
 
   \setbeamercovered{transparent}
   % or whatever (possibly just delete it)
 }
 
-
+\usepackage{tikz}
+\usepackage{graphicx}
 \usepackage[english]{babel}
 % or whatever
 
@@ -54,7 +55,7 @@
 \subtitle
 {}
 
-\author[Author, Another] % (optional, use only with lots of authors)
+\author[Christensen, Soderberg] % (optional, use only with lots of authors)
 {Garret~Christensen\inst{1} \and Courtney~Soderberg\inst{2}}
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different
@@ -137,24 +138,63 @@
 %   you think necessary.
 % - If you omit details that are vital to the proof/implementation,
 %   just say so once. Everybody will be happy with that.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Motivation}
+ \begin{frame}
+ Our goal:
+ \begin{itemize}
+ \item
+ Detailed hands-on how-to manual, linking to the best examples.
+ \item 
+ Cover all aspects of a transparent research project, from beginning (hypothesis registration) to end (publication, data sharing).
+ \item 
+ Keep the manual updated.
+ \item
+ Encourage participation from the community.
+ \end{itemize}
+\end{frame} 
 
-\subsection{Publication Bias}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ethical Research}
+\begin{frame}{Ethical Research}
+\begin{itemize}
+\item
+Transparency is part of being an ethical researcher. 
+\item
+Admit that we're human, subject to bias and motivated reasoning, transparency can help with this (Nosek, Spies, Motyl 2012).
+\item
+Since a lot of us run experiments, we should take IRBs seriously as part of transparency (Ch. 11--13 Morton \& Williams 2010, Desposato 2014). 
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Study Design and Power}
+\begin{frame}{Study Design and Power--BETA}
+\begin{itemize}
+\item
+Adequately power trials to help prevent spurious significant results. 
+\item
+Practical suggestions like collaboration with other labs to mutually run each others' experiments (Open Science Collaboration 2014).
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Registrations}
+
+\subsection*{Publication Bias}
 \begin{frame}{Publication Bias}%{Subtitles are optional.}
   % - A title should summarize the slide in an understandable fashion
   %   for anyone how does not follow everything on the slide itself.
+  The problem:
   \begin{itemize}
   \item
-   The distibution of published p-values jumps around .05 (Brodeur et al 2013).
+ Effect sizes diminish with sample size (Gerber, Green, Nickerson 2001)
   \item
   There is a higher fraction of rejected hypothesis tests in the social sciences (Fanelli 2010).
   \item
   	Published null results are disappearing over time, in all disciplines (Fanelli 2011). 
   \item
-    This is very unlikely to represent the true state of the universe.
-  \item
-  	Data on the complete set of experiments run shows strong results are 40pp more likely to be published, and 60pp more likely to be written up. The file drawer problem is massive. (Franco, Malhotra, Simonovits 2014---see tomorrow)
+  	Data on the complete set of experiments run shows strong results are 40pp more likely to be published, and 60pp more likely to be written up. The file drawer problem is large. (Franco, Malhotra, Simonovits 2014)
   \end{itemize}
 \end{frame}
 
@@ -162,39 +202,211 @@
 If we only write up/publish significant results, and we have no record of all the insignificant results, we have no way to tell if our `significant' results are real, or if they're the 5\% we should expect due to noise.
 \end{frame}
 
-\subsection{P-Hacking}
-\begin{frame}{P-Hacking}
+\subsection*{Registrations}
+\begin{frame}{Registrations}
+ \begin{itemize}
+  \item
+   Publicly stating all research you will do, what hypotheses you will test, prospectively.
+   %\item If we know every hypothesis test that is run on a given subject, we have a better idea of how seriously to take the significant results.
+  \item
+   Near universal adoption in medical RCTs. Numerous journals won't publish if it's not registered. \url{http://clinicaltrials.gov}
+  \item
+   Even better if registry requires outcomes from after study. Currently limited, but NIH is moving on this.
+\end{itemize}
+\end{frame}
+\begin{frame}{Registrations}
 \begin{itemize}
-\item
-Not something only evil people do. It's subconcious.
+   \item Newer to social sciences, but:
+   \begin{itemize}
+   \item
+   	AEA registry, currently only for RCTs. \url{http://socialscienceregistry.org}
+   \item
+    EGAP registry \url{http://egap.org/design-registration}
+   \item 
+    3ie registry, for developing country evaluations. \url{http://ridie.3ieimpact.org}
+   \item
+   	Open Science Framework \url{http://osf.io}
+   	\begin{itemize}
+   	\item
+   	Open format
+   	\item
+   	Will soon sync with above
+   	\end{itemize}
+   \end{itemize}
+  \end{itemize}  
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pre-Analysis Plans}
+\subsection*{P-Hacking}
+\begin{frame}{P-Hacking}
+The problem:
+\begin{itemize}
 \item
 Also called fishing, researcher degrees of freedom, or data-mining.
 \item
 Definition: flexibility in data analysis allows portrayal of \textit{anything} as below an arbitrary p-value threshhold; significance loses its meaning.
+\item
+Not something only evil people do. It's subconcious, or simply built into statistics (Gelman, Loken 2013).
 \end{itemize}
 \end{frame}
 
-\begin{frame}
+\subsection*{Pre-Analysis Plan}
+\begin{frame}{Pre-Analysis Plan}
+\pause
+\begin{itemize}
+\item
+Often part of a registration
+\item
+From 3ie: ``A pre-analysis plan is a detailed description of the analysis to be conducted that is written in advance of seeing the data on impacts of the program being evaluated. It may specify hypotheses to be tested, variable construction, equations to be estimated, controls to be used, and other aspects of the analysis. A key function of the pre-analysis plan is to increase transparency in the research. By setting out the details in advance of what will be done and before knowing the results, the plan guards against data mining and specification searching. Researchers are encouraged to develop and upload such a plan with their study registration, but it is not required for registration.''
+\end{itemize}
 \end{frame}
 
-\section{Solutions}
-\subsection{Registration}
-\begin{frame}{Definition and Origins}
-\end{frame}
-\begin{frame}{Contents}
-\end{frame}
-\subsection{Pre-Analysis Plan}
-\begin{frame}{Contents}
+\begin{frame}{Glennerster, Takavarasha Suggestions}
+\textit{Running Randomized Evaluations}
+\begin{enumerate}[<.->]
+\def\labelenumi{\arabic{enumi}.}
+\item
+  the main outcome measures,
+\item
+  which outcome measures are primary and which are secondary,
+\item
+  the precise composition of any families that will be used for mean
+  effects analysis,
+\item
+  the subgroups that will be analyzed,
+\item
+  the direction of expected impact if we want to use a one-sided test,
+  and
+\item
+  the primary specification to be used for the analysis.
+\end{enumerate}
 \end{frame}
 
-\section{Implementation}
-\begin{frame}{AEA Trial Registration}
-\end{frame} 
-\begin{frame}{EGAP Registration}
+\begin{frame}{McKenzie Suggestions}
+\href{http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist}{World Bank Development Impact Blog}
+
+\begin{enumerate}[<.->]
+\item
+  Description of the sample to be used in the study
+\item
+  Key data sources
+\item
+  Hypotheses to be tested throughout the causal chain
+\item
+  Specify how variables will be constructed
+\item
+  Specify the treatment effect equation to be estimated
+\item
+  What is the plan for how to deal with multiple outcomes and multiple
+  hypothesis testing?
+\item
+  Procedures to be used for addressing survey attrition
+\item
+  How will the study deal with outcomes with limited variation?
+\item
+  If you are going to be testing a model, include the model
+\item
+  Remember to archive it
+\end{enumerate}
 \end{frame}
-\begin{frame}{3ie Registration}
+
+\begin{frame}{Simmons, Nelson, Simonsohn (2011)}
+\begin{enumerate}[<.->]
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Authors must decide the rule for terminating data collection before
+  data collection begins and report this rule in the article.
+\item
+  Authors must collect at least 20 observations per cell or else provide
+  a compelling cost-of-data-collection justification.
+\item
+  Authors must list all variables collected in a study.
+\item
+  Authors must report all experimental conditions, including failed
+  manipulations.
+\item
+  If observations are eliminated, authors must also report what the
+  statistical results are if those observations are included.
+\item
+  If an analysis includes a covariate, authors must report the
+  statistical results of the analysis without the covariate.
+\end{enumerate}
+
 \end{frame}
-\begin{frame}{Open Science Framework}
+
+\begin{frame}{Examples}
+Wide range of when to write and how detailed to make the plan. At the extreme level of detail you would have your entire code already written before you got any data.
+\begin{itemize}
+\item
+J-PAL Hypothesis Registry (11), see \url{http://www.povertyactionlab.org/Hypothesis-Registry}
+\item
+AEA Registry has relatively few, plentiful in EGAP.
+\item
+Casey, Glennerster, Miguel, ``\href{http://www.nber.org/data-appendix/w17012/GBF_Supplementary_Appendix_2011-10-07.pdf}{Reshaping Institutions: Evidence on Aid Impacts Using a Pre-Analysis Plan}'' \textit{QJE} 2012. (\href{http://http://eml.berkeley.edu/~emiguel/pdfs/miguel_gbf.pdf}{Paper},\href{http://www.nber.org/data-appendix/w17012/GBF_Supplementary_Appendix_2011-10-07.pdf}{Plan})
+\begin{itemize}[<.->]
+ \item Government-sponsored program.
+ \item Broad program (Community Driven Development)
+ \item Broad outcomes (trust, public goods, public services, community groups, information, participation, crime, welfare, attitudes)
+ \end{itemize} 
+\end{itemize} 
+\end{frame}
+
+%{ % all template changes are local to this group.
+ %   \setbeamertemplate{navigation symbols}{}
+  %  \begin{frame}[plain]
+   %      \begin{tikzpicture}[remember picture,overlay]
+    %        \node[at=(current page.center)] {
+     %           \includegraphics[width=\paperwidth]{GoBifo1.PNG}
+      %      };
+       % \end{tikzpicture}
+ %    \end{frame}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Replication}
+\begin{frame}{Replication}
+\begin{enumerate}[<.->]
+ \item Project Protocol, Reporting Standards
+ \item Organizing Workflow
+ \item Data Sharing
+ \item Reporting Standards
+\end{enumerate}
+\end{frame}
+
+\subsection*{Project Protocol, Reporting Standards}
+\begin{frame}{Project Protocol, Reporting Standards}
+ Make sure you report everything another researcher would need to replicate your research.
+ \begin{itemize}
+ \item Find the appropriate reporting standard for your field and follow it: \url{http://www.equator-network.org/}
+\item Report the nuts and bolts of the project implementation in a detailed protocol: \url{http://www.spirit-statement.org}
+\end{itemize}
+\end{frame}
+
+ \subsection*{Workflow}
+ \begin{frame}{Workflow}
+ \pause
+ Practical coding and organizational suggestions
+ \begin{itemize}
+ \item Long (2008) \textit{The Workflow of Data Analysis Using Stata}
+ \begin{itemize}
+ 	\item Any changes to a file that has been posted/shared needs a new name.
+ 	\item Use version commands to ensure others get same results.
+  \end{itemize}
+ \item Literate programming (extensive commenting, making the aim of code reading by a human)
+ \item R Markdown, integration of analysis and output.
+\end{itemize}
+\end{frame}
+
+\subsection*{Data Sharing}
+\begin{frame}{Data Sharing}
+Post your code and your data in a trusted public repository.
+\begin{itemize}[<.->]
+\item
+Find the appropriate repository: \url{http://www.re3data.org/}
+\item
+Repository will last longer than your own website.
+\item
+Repository is more easily searchable by other researchers.
 \end{frame}
 
 \section{Conclusion}

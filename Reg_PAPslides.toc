@@ -1,9 +1,9 @@
 \beamer@endinputifotherversion {3.33pt}
 \select@language {english}
-\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Publication Bias}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{P-Hacking}{8}{0}{1}
-\beamer@sectionintoc {2}{Solutions}{19}{0}{2}
-\beamer@subsectionintoc {2}{1}{Registration}{19}{0}{2}
-\beamer@subsectionintoc {2}{2}{Pre-Analysis Plan}{30}{0}{2}
-\beamer@sectionintoc {3}{Conclusion}{59}{0}{3}
+\beamer@sectionintoc {1}{Problems}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Publication Bias}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{P-Hacking}{10}{0}{1}
+\beamer@sectionintoc {2}{Solutions}{21}{0}{2}
+\beamer@subsectionintoc {2}{1}{Registration}{21}{0}{2}
+\beamer@subsectionintoc {2}{2}{Pre-Analysis Plan}{23}{0}{2}
+\beamer@sectionintoc {3}{Conclusion}{58}{0}{3}
