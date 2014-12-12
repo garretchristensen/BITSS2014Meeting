@@ -1,29 +1,5 @@
-% !TEX TS-program = pdflatex
-% !TEX encoding = UTF-8 Unicode
 
-% This file is a template using the "beamer" package to create slides for a talk or presentation
-% - Talk at a conference/colloquium.
-% - Talk length is about 20min.
-% - Style is ornate.
-
-% MODIFIED by Jonathan Kew, 2008-07-06
-% The header comments and encoding in this file were modified for inclusion with TeXworks.
-% The content is otherwise unchanged from the original distributed with the beamer package.
-
-\documentclass{beamer}
-%\usepackage{natbib}
-
-% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
-%
-% In principle, this file can be redistributed and/or modified under
-% the terms of the GNU Public License, version 2.
-%
-% However, this file is supposed to be a template to be modified
-% for your own needs. For this reason, if you use this file as a
-% template and not specifically distribute it as part of a another
-% package/program, I grant the extra permission to freely copy and
-% modify this file as you see fit and even to delete this copyright
-% notice. 
+\documentclass{beamer} 
 
 
 \mode<presentation>
@@ -50,7 +26,7 @@
 
 
 \title[Manual of Best Practices in Transparent Research] % (optional, use only with long paper titles)
-{Manual of Best Practices in Transparent Social Sciences Research}
+{Manual of Best Practices in Transparent Social Science Research}
 
 \subtitle
 {}
@@ -116,10 +92,7 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Outline}
-  \tableofcontents
-  % You might wish to add the option [pausesections]
-\end{frame}
+
 
 
 % Structuring a talk is a difficult task and the following structure
@@ -139,21 +112,26 @@
 % - If you omit details that are vital to the proof/implementation,
 %   just say so once. Everybody will be happy with that.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Motivation}
- \begin{frame}
+\section{Introduction}
+ \begin{frame}{Introduction}
  Our goal:
  \begin{itemize}
  \item
- Detailed hands-on how-to manual, linking to the best examples.
+ Detailed hands-on how-to manual for transparent social science research. 
+ \item Focus on implementing the solutions in research, less on convincing of the problems.
  \item 
- Cover all aspects of a transparent research project, from beginning (hypothesis registration) to end (publication, data sharing).
+ Cover all aspects of a transparent research project, from beginning (study design, hypothesis registration) to end (publication, data sharing).
  \item 
  Keep the manual updated.
  \item
  Encourage participation from the community.
  \end{itemize}
 \end{frame} 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ethical Research}
 \begin{frame}{Ethical Research}
@@ -185,8 +163,8 @@ Practical suggestions like collaboration with other labs to mutually run each ot
 \begin{frame}{Publication Bias}%{Subtitles are optional.}
   % - A title should summarize the slide in an understandable fashion
   %   for anyone how does not follow everything on the slide itself.
-  The problem:
-  \begin{itemize}
+  Existence of the problem:
+  \begin{itemize}[<.->]
   \item
  Effect sizes diminish with sample size (Gerber, Green, Nickerson 2001)
   \item
@@ -204,6 +182,7 @@ If we only write up/publish significant results, and we have no record of all th
 
 \subsection*{Registrations}
 \begin{frame}{Registrations}
+Explain the solution:
  \begin{itemize}
   \item
    Publicly stating all research you will do, what hypotheses you will test, prospectively.
@@ -217,7 +196,7 @@ If we only write up/publish significant results, and we have no record of all th
 \begin{frame}{Registrations}
 \begin{itemize}
    \item Newer to social sciences, but:
-   \begin{itemize}
+   \begin{itemize}[<.->]
    \item
    	AEA registry, currently only for RCTs. \url{http://socialscienceregistry.org}
    \item
@@ -239,8 +218,8 @@ If we only write up/publish significant results, and we have no record of all th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Pre-Analysis Plans}
 \subsection*{P-Hacking}
-\begin{frame}{P-Hacking}
-The problem:
+\begin{frame}[<.->]{P-Hacking}
+Define the problem:
 \begin{itemize}
 \item
 Also called fishing, researcher degrees of freedom, or data-mining.
@@ -253,10 +232,8 @@ Not something only evil people do. It's subconcious, or simply built into statis
 
 \subsection*{Pre-Analysis Plan}
 \begin{frame}{Pre-Analysis Plan}
-\pause
+Explain the solution:
 \begin{itemize}
-\item
-Often part of a registration
 \item
 From 3ie: ``A pre-analysis plan is a detailed description of the analysis to be conducted that is written in advance of seeing the data on impacts of the program being evaluated. It may specify hypotheses to be tested, variable construction, equations to be estimated, controls to be used, and other aspects of the analysis. A key function of the pre-analysis plan is to increase transparency in the research. By setting out the details in advance of what will be done and before knowing the results, the plan guards against data mining and specification searching. Researchers are encouraged to develop and upload such a plan with their study registration, but it is not required for registration.''
 \end{itemize}
@@ -336,45 +313,33 @@ From 3ie: ``A pre-analysis plan is a detailed description of the analysis to be 
 \end{frame}
 
 \begin{frame}{Examples}
-Wide range of when to write and how detailed to make the plan. At the extreme level of detail you would have your entire code already written before you got any data.
+
+\begin{itemize}[<.->]
+\item
+J-PAL Hypothesis Registry (11), see \url{http://www.povertyactionlab.org/Hypothesis-Registry}, 6 published papers:
 \begin{itemize}
 \item
-J-PAL Hypothesis Registry (11), see \url{http://www.povertyactionlab.org/Hypothesis-Registry}
-\item
-AEA Registry has relatively few, plentiful in EGAP.
-\item
-Casey, Glennerster, Miguel, ``\href{http://www.nber.org/data-appendix/w17012/GBF_Supplementary_Appendix_2011-10-07.pdf}{Reshaping Institutions: Evidence on Aid Impacts Using a Pre-Analysis Plan}'' \textit{QJE} 2012. (\href{http://http://eml.berkeley.edu/~emiguel/pdfs/miguel_gbf.pdf}{Paper},\href{http://www.nber.org/data-appendix/w17012/GBF_Supplementary_Appendix_2011-10-07.pdf}{Plan})
-\begin{itemize}[<.->]
- \item Government-sponsored program.
- \item Broad program (Community Driven Development)
- \item Broad outcomes (trust, public goods, public services, community groups, information, participation, crime, welfare, attitudes)
- \end{itemize} 
+ Sierra Leone CDD, Oregon Medicare, Turkey Job Training, El Salvador TOMS, two in Indonesia (Olken et al.)
+\end{itemize}
+\item Hawkins, Fitzgerald, Nosek---Conception Risk and Prejudice
 \end{itemize} 
+\vspace{0.25in}
+Wide range of when exactly to write and how detailed to make the plan. At the extreme level of detail you would have your entire code already written before you got any data.
 \end{frame}
 
-%{ % all template changes are local to this group.
- %   \setbeamertemplate{navigation symbols}{}
-  %  \begin{frame}[plain]
-   %      \begin{tikzpicture}[remember picture,overlay]
-    %        \node[at=(current page.center)] {
-     %           \includegraphics[width=\paperwidth]{GoBifo1.PNG}
-      %      };
-       % \end{tikzpicture}
- %    \end{frame}
-%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Replication}
 \begin{frame}{Replication}
 \begin{enumerate}[<.->]
+ \item The Problem	(JMCB Project)
  \item Project Protocol, Reporting Standards
  \item Organizing Workflow
- \item Data Sharing
- \item Reporting Standards
+ \item Code \& Data Sharing
 \end{enumerate}
 \end{frame}
 
 \subsection*{Project Protocol, Reporting Standards}
-\begin{frame}{Project Protocol, Reporting Standards}
+\begin{frame}[<.->]{Project Protocol, Reporting Standards}
  Make sure you report everything another researcher would need to replicate your research.
  \begin{itemize}
  \item Find the appropriate reporting standard for your field and follow it: \url{http://www.equator-network.org/}
@@ -384,12 +349,18 @@ Casey, Glennerster, Miguel, ``\href{http://www.nber.org/data-appendix/w17012/GBF
 
  \subsection*{Workflow}
  \begin{frame}{Workflow}
- \pause
+``Reproducibility is just collaboration with people you don't know,
+including yourself next week''
+
+---Philip Stark, UC Berkeley Statistics
+\end{frame}
+\begin{frame}{Workflow}
+
  Practical coding and organizational suggestions
  \begin{itemize}
  \item Long (2008) \textit{The Workflow of Data Analysis Using Stata}
  \begin{itemize}
- 	\item Any changes to a file that has been posted/shared needs a new name.
+ 	\item Making any changes to a file that has been posted/shared means it gets a new name.
  	\item Use version commands to ensure others get same results.
   \end{itemize}
  \item Literate programming (extensive commenting, making the aim of code reading by a human)
@@ -404,13 +375,30 @@ Post your code and your data in a trusted public repository.
 \item
 Find the appropriate repository: \url{http://www.re3data.org/}
 \item
-Repository will last longer than your own website.
+Repositories will last longer than your own website.
 \item
-Repository is more easily searchable by other researchers.
+Repositories are more easily searchable by other researchers.
+\item
+Repositories will store your data in a non-proprietary format that won't become obsolete.
+\end{itemize}
 \end{frame}
 
 \section{Conclusion}
 \begin{frame}{Conclusion}
+OK, how do I implement this in my own research?
+
+Read the manual.
+
+\vspace{0.25in}
+To do:
+\begin{itemize}[<.->]
+\item Badges
+\item Registered Reports
+\item TIER
+\item Dynamic documents with R Markdown
+\item If you have suggestions, it's on GitHub for a reason.
+\url{https://github.com/garretchristensen/BestPracticesManual}
+\end{itemize}
 \end{frame}
 
 
