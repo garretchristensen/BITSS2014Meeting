@@ -1,0 +1,438 @@
+
+\documentclass{beamer} 
+
+
+\mode<presentation>
+{
+  \usetheme{Berkeley}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\title[Manual of Best Practices in Transparent Research] % (optional, use only with long paper titles)
+{Manual of Best Practices in Transparent Social Science Research}
+
+\subtitle
+{}
+
+\author[Christensen, Soderberg] % (optional, use only with lots of authors)
+{Garret~Christensen\inst{1} \and Courtney~Soderberg\inst{2}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
+{
+  \inst{1}%
+  Berkeley Initiative for Transparency in the Social Sciences\\
+  UC Berkeley
+  \and
+  \inst{2}%
+  Center for Open Science\\
+  }
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[BITSS2014] % (optional, should be abbreviation of conference name)
+{CEGA Staff Meeting, April 2015}
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{Research Transparency}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+%\AtBeginSubsection[]
+%{
+%  \begin{frame}<beamer>{Outline}
+%    \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+
+
+% Structuring a talk is a difficult task and the following structure
+% may not be suitable. Here are some rules that apply for this
+% solution: 
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+% - A conference audience is likely to know very little of what you
+%   are going to talk about. So *simplify*!
+% - In a 20min talk, getting the main ideas across is hard
+%   enough. Leave out details, even if it means being less precise than
+%   you think necessary.
+% - If you omit details that are vital to the proof/implementation,
+%   just say so once. Everybody will be happy with that.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+ \begin{frame}{Introduction}
+ Our goal:
+ \begin{itemize}
+ \item
+ Detailed hands-on how-to manual for transparent social science research. 
+ \item Focus on implementing the solutions in research, less on convincing of the problems.
+ \item 
+ Cover all aspects of a transparent research project, from beginning (study design, hypothesis registration) to end (publication, data sharing).
+ \item 
+ Keep the manual updated.
+ \item
+ Encourage participation from the community. \url{http://github.com/garretchristensen}
+ \end{itemize}
+\end{frame} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ethical Research}
+\begin{frame}{Ethical Research}
+\begin{itemize}
+\item
+Transparency is part of being an ethical researcher. 
+\item
+Admit that we're human, subject to bias and motivated reasoning, transparency can help with this (Nosek, Spies, Motyl 2012).
+\item
+Since a lot of us run experiments, we should take IRBs seriously as part of transparency (Ch. 11--13 Morton \& Williams 2010, Desposato 2014). 
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Study Design and Power}
+\begin{frame}{Study Design and Power--BETA}
+\begin{itemize}
+\item
+Adequately power trials to help prevent spurious significant results. 
+\item
+Practical suggestions like collaboration with other labs to mutually run each others' experiments (Open Science Collaboration 2014).
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Registrations}
+
+\subsection*{Publication Bias}
+\begin{frame}{Publication Bias}%{Subtitles are optional.}
+  % - A title should summarize the slide in an understandable fashion
+  %   for anyone how does not follow everything on the slide itself.
+  Existence of the problem:
+  \begin{itemize}[<.->]
+  \item
+ Effect sizes diminish with sample size (Gerber, Green, Nickerson 2001)
+  \item
+  There is a higher fraction of rejected hypothesis tests in the social sciences (Fanelli 2010).
+  \item
+  	Published null results are disappearing over time, in all disciplines (Fanelli 2011). 
+  \item
+  	Data on the complete set of experiments run shows strong results are 40pp more likely to be published, and 60pp more likely to be written up. The file drawer problem is large. (Franco, Malhotra, Simonovits 2014)
+  \end{itemize}
+\end{frame}
+
+\begin {frame}{Publication Bias}
+If we only write up/publish significant results, and we have no record of all the insignificant results, we have no way to tell if our `significant' results are real, or if they're the 5\% we should expect due to noise.
+\end{frame}
+
+\subsection*{Registrations}
+\begin{frame}{Registrations}
+Explain the solution:
+ \begin{itemize}
+  \item
+   Publicly stating all research you will do, what hypotheses you will test, prospectively.
+   %\item If we know every hypothesis test that is run on a given subject, we have a better idea of how seriously to take the significant results.
+  \item
+   Near universal adoption in medical RCTs. Top journals (ICMJE) won't publish if it's not registered. \url{http://clinicaltrials.gov}
+  \item
+   Even better if registry requires outcomes from after study. Currently limited, but NIH is moving on this.
+\end{itemize}
+\end{frame}
+\begin{frame}{Registrations}
+\begin{itemize}
+   \item Newer to social sciences, but:
+   \begin{itemize}[<.->]
+   \item
+   	AEA registry, currently only for RCTs. \url{http://socialscienceregistry.org}
+   \item
+    EGAP registry \url{http://egap.org/design-registration}
+   \item 
+    3ie registry, for developing country evaluations. \url{http://ridie.3ieimpact.org}
+   \item
+   	Open Science Framework \url{http://osf.io}
+   	\begin{itemize}
+   	\item
+   	Open format
+   	\item
+   	Will soon sync with above
+   	\end{itemize}
+   \end{itemize}
+  \end{itemize}  
+\end{frame}
+
+\begin{frame}{Design-Based Publication}
+AKA Registered Reports, moves peer review before data gathering, results, and analysis.
+
+\begin{enumerate}[<.->]
+\item Design a project
+\item Submit
+\item Reviewed based on importance of question and quality of design
+\item Get in-principle acceptance
+\item Follow through, and nulls get published
+\end{enumerate}
+\href{https://osf.io/8mpji/wiki/home/}{14 Journals, 4 more with Special Issues \beamergotobutton{Link}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pre-Analysis Plans}
+\subsection*{P-Hacking}
+\begin{frame}[<.->]{P-Hacking}
+Define the problem:
+\begin{itemize}
+\item
+Also called fishing, researcher degrees of freedom, or data-mining.
+\item
+Definition: flexibility in data analysis allows portrayal of \textit{anything} as below an arbitrary p-value threshhold; significance loses its meaning.
+\item
+Not something only evil people do. It's subconcious, or simply built into statistics (Gelman, Loken 2013).
+\end{itemize}
+\end{frame}
+
+\subsection*{Pre-Analysis Plan}
+\begin{frame}{Pre-Analysis Plan}
+Explain the solution:
+\begin{itemize}
+\item
+From 3ie: ``A pre-analysis plan is a detailed description of the analysis to be conducted that is written in advance of seeing the data on impacts of the program being evaluated. It may specify hypotheses to be tested, variable construction, equations to be estimated, controls to be used, and other aspects of the analysis. A key function of the pre-analysis plan is to increase transparency in the research. By setting out the details in advance of what will be done and before knowing the results, the plan guards against data mining and specification searching. Researchers are encouraged to develop and upload such a plan with their study registration, but it is not required for registration.''
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Origin: FDA's Guidance for Industry}
+``E9 Statistical Principles for Clinical Trials'' (1998)
+\href{http://www.fda.gov/downloads/drugs/guidancecomplianceregulatoryinformation/guidances/ucm073137.pdf}{\beamergotobutton{Link}}
+
+\S V Data Analysis Considerations
+\begin{enumerate}
+\item Prespecification of the Analysis
+\item Analysis Sets
+\item Missing Values and Outliers
+\item Data Transformation
+\item Estimation, Confidence Intervals, and Hypothesis Testing
+\item Adjustment of Significance and Confidence Levels
+\item Subgroups, Interactions, and Covariates
+\item Integrity of Data and Computer Software Validity
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Glennerster, Takavarasha Suggestions}
+\textit{Running Randomized Evaluations}
+\begin{enumerate}[<.->]
+\def\labelenumi{\arabic{enumi}.}
+\item
+  the main outcome measures,
+\item
+  which outcome measures are primary and which are secondary,
+\item
+  the precise composition of any families that will be used for mean
+  effects analysis,
+  \begin{itemize}
+  \item Explain mean effects, FWER, FDR using Anderson (JASA 2008).
+  \end{itemize}
+\item
+  the subgroups that will be analyzed,
+\item
+  the direction of expected impact if we want to use a one-sided test,
+  and
+\item
+  the primary specification to be used for the analysis.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{McKenzie Suggestions}
+\href{http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist}{World Bank Development Impact Blog}
+
+\begin{enumerate}[<.->]
+\item
+  Description of the sample to be used in the study
+\item
+  Key data sources
+\item
+  Hypotheses to be tested throughout the causal chain
+\item
+  Specify how variables will be constructed
+\item
+  Specify the treatment effect equation to be estimated
+\item
+  What is the plan for how to deal with multiple outcomes and multiple
+  hypothesis testing?
+\item
+  Procedures to be used for addressing survey attrition
+\item
+  How will the study deal with outcomes with limited variation?
+\item
+  If you are going to be testing a model, include the model
+\item
+  Remember to archive it
+\end{enumerate}
+\end{frame}
+
+%\begin{frame}{Simmons, Nelson, Simonsohn (2011)}
+%\begin{enumerate}[<.->]
+%\def\labelenumi{\arabic{enumi}.}
+%\item
+%  Authors must decide the rule for terminating data collection before data collection begins and report this rule in the article.
+%\item
+%  Authors must collect at least 20 observations per cell or else provide
+%  a compelling cost-of-data-collection justification.
+%\item
+%  Authors must list all variables collected in a study.
+%\item
+%  Authors must report all experimental conditions, including failed
+%  manipulations.
+%\item
+%  If observations are eliminated, authors must also report what the
+%  statistical results are if those observations are included.
+%\item
+%  If an analysis includes a covariate, authors must report the
+%  statistical results of the analysis without the covariate.
+%\end{enumerate}
+%\end{frame}
+
+\begin{frame}{Examples}
+
+\begin{itemize}[<.->]
+\item
+J-PAL Hypothesis Registry (11), see \url{http://www.povertyactionlab.org/Hypothesis-Registry}, 6 published papers:
+\begin{itemize}
+\item
+ Sierra Leone CDD, Oregon Medicare, Turkey Job Training, El Salvador TOMS, two in Indonesia (Olken et al.)
+\end{itemize}
+\item OSF: Hawkins, Fitzgerald, Nosek---Conception Risk and Prejudice
+\end{itemize} 
+\vspace{0.25in}
+Wide range of when exactly to write and how detailed to make the plan. At the extreme level of detail you would have your entire code already written before you got any data.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Replication}
+\begin{frame}{Replication}
+\begin{enumerate}[<.->]
+ \item The Problem	(JMCB Project)
+ \item Project Protocol, Reporting Standards
+ \item Organizing Workflow
+ \item Code \& Data Sharing
+\end{enumerate}
+\end{frame}
+
+\subsection*{Project Protocol, Reporting Standards}
+\begin{frame}[<.->]{Project Protocol, Reporting Standards}
+ Make sure you report everything another researcher would need to replicate your research.
+ \begin{itemize}
+ \item Find the appropriate reporting standard for your field and follow it: \url{http://www.equator-network.org/}
+\item Report the nuts and bolts of the project implementation in a detailed protocol: \url{http://www.spirit-statement.org}
+\end{itemize}
+\end{frame}
+
+ \subsection*{Workflow}
+ \begin{frame}{Workflow}
+``Reproducibility is just collaboration with people you don't know,
+including yourself next week''
+
+---Philip Stark, UC Berkeley Statistics
+\end{frame}
+\begin{frame}{Workflow}
+
+ Practical coding and organizational suggestions
+ \begin{itemize}
+ \item Long (2008) \textit{The Workflow of Data Analysis Using Stata}
+ \begin{itemize}
+ 	\item Making any changes to a file that has been posted/shared means it gets a new name.
+ 	\item Use version commands to ensure others get same results.
+  \end{itemize}
+ \item Literate programming (extensive commenting, making the aim of code reading by a human)
+ \item R Markdown, integration of analysis and output.
+\end{itemize}
+\end{frame}
+
+\subsection*{Data Sharing}
+\begin{frame}{Data Sharing}
+Post your code and your data in a trusted public repository.
+\begin{itemize}[<.->]
+\item
+Find the appropriate repository: \url{http://www.re3data.org/}
+\item
+Repositories will last longer than your own website.
+\item
+Repositories are more easily searchable by other researchers.
+\item
+Repositories will store your data in a non-proprietary format that won't become obsolete.
+\end{itemize}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+OK, how do I implement this in my own research?
+
+Read the manual.
+
+\vspace{0.25in}
+To do:
+\begin{itemize}[<.->]
+\item P-curve
+\item Dynamic documents with R Markdown
+\item If you have suggestions, it's on GitHub for a reason.
+\url{https://github.com/garretchristensen/BestPracticesManual}
+\href{https://github.com/garretchristensen/BestPracticesManual}{\beamergotobutton{Link}}
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
+
+
