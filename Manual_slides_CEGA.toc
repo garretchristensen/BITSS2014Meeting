@@ -1,9 +1,9 @@
 \beamer@endinputifotherversion {3.33pt}
 \select@language {english}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Ethical Research}{8}{0}{2}
-\beamer@sectionintoc {3}{Study Design and Power}{11}{0}{3}
+\beamer@sectionintoc {2}{Ethical Research}{9}{0}{2}
+\beamer@sectionintoc {3}{Study Design and Power}{12}{0}{3}
 \beamer@sectionintoc {4}{Registrations}{13}{0}{4}
-\beamer@sectionintoc {5}{Pre-Analysis Plans}{20}{0}{5}
-\beamer@sectionintoc {6}{Replication}{33}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{42}{0}{7}
+\beamer@sectionintoc {5}{Pre-Analysis Plans}{25}{0}{5}
+\beamer@sectionintoc {6}{Replication}{38}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{47}{0}{7}

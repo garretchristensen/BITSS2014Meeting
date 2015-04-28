@@ -50,7 +50,7 @@
 % - Keep it simple, no one is interested in your street address.
 
 \date[BITSS2014] % (optional, should be abbreviation of conference name)
-{CEGA Staff Meeting, April 2015}
+{Econ 270D Presentation, April 2015}
 % - Either use conference name or its abbreviation.
 % - Not really informative to the audience, more for people (including
 %   yourself) who are reading the slides online
@@ -118,13 +118,15 @@
  \begin{itemize}
  \item
  Detailed hands-on how-to manual for transparent social science research. 
- \item Focus on implementing the solutions in research, less on convincing of the problems.
+ \item Focus on implementing the solutions in research, less on convincing of the problems. (?)
  \item 
  Cover all aspects of a transparent research project, from beginning (study design, hypothesis registration) to end (publication, data sharing).
  \item 
  Keep the manual updated.
  \item
- Encourage participation from the community. \url{http://github.com/garretchristensen}
+ Encourage participation from the community. (?) \url{http://github.com/garretchristensen}
+ \item 
+ Publish an actual short textbook.
  \end{itemize}
 \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,7 +141,7 @@
 \item
 Transparency is part of being an ethical researcher. 
 \item
-Admit that we're human, subject to bias and motivated reasoning, transparency can help with this (Nosek, Spies, Motyl 2012).
+Fraud exists (Simonsohn 2013), but mostly we should admit that we're human, subject to bias and motivated reasoning, transparency can help with this (Nosek, Spies, Motyl 2012).
 \item
 Since a lot of us run experiments, we should take IRBs seriously as part of transparency (Ch. 11--13 Morton \& Williams 2010, Desposato 2014). 
 \end{itemize}
@@ -147,12 +149,18 @@ Since a lot of us run experiments, we should take IRBs seriously as part of tran
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Study Design and Power}
-\begin{frame}{Study Design and Power--BETA}
-\begin{itemize}
+\begin{frame}{Study Design and Power}
+\begin{itemize}[<.->]
 \item
 Adequately power trials to help prevent spurious significant results. 
 \item
-Practical suggestions like collaboration with other labs to mutually run each others' experiments (Open Science Collaboration 2014).
+Practical suggestions:
+\begin{itemize}
+\item
+Collaborate with other labs to mutually run each others' experiments (Open Science Collaboration 2014).
+\item
+Maximize power subject to budget constraint by adjusting expensive treatment arm (relative) size (Duflo, Glennerster, Kremer 2007). 
+\end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -168,7 +176,7 @@ Practical suggestions like collaboration with other labs to mutually run each ot
   \item
  Effect sizes diminish with sample size (Gerber, Green, Nickerson 2001)
   \item
-  There is a higher fraction of rejected hypothesis tests in the social sciences (Fanelli 2010).
+  There is a higher fraction of rejected hypothesis tests in social compared to hard sciences (Fanelli 2010).
   \item
   	Published null results are disappearing over time, in all disciplines (Fanelli 2011). 
   \item
@@ -176,13 +184,24 @@ Practical suggestions like collaboration with other labs to mutually run each ot
   \end{itemize}
 \end{frame}
 
+{ % all template changes are local to this group.
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+                \includegraphics[height=\paperheight]{TurnerFigure1.PNG}
+            };
+        \end{tikzpicture}
+     \end{frame}
+}
+
 \begin {frame}{Publication Bias}
 If we only write up/publish significant results, and we have no record of all the insignificant results, we have no way to tell if our `significant' results are real, or if they're the 5\% we should expect due to noise.
 \end{frame}
 
 \subsection*{Registrations}
-\begin{frame}{Registrations}
-Explain the solution:
+\begin{frame}{Registration}
+Registration as Solution to Publication Bias:
  \begin{itemize}
   \item
    Publicly stating all research you will do, what hypotheses you will test, prospectively.
@@ -193,7 +212,8 @@ Explain the solution:
    Even better if registry requires outcomes from after study. Currently limited, but NIH is moving on this.
 \end{itemize}
 \end{frame}
-\begin{frame}{Registrations}
+
+\begin{frame}{Registration}
 \begin{itemize}
    \item Newer to social sciences, but:
    \begin{itemize}[<.->]
@@ -204,7 +224,7 @@ Explain the solution:
    \item 
     3ie registry, for developing country evaluations. \url{http://ridie.3ieimpact.org}
    \item
-   	Open Science Framework \url{http://osf.io}
+   	Open Science Framework\\ \url{http://osf.io}
    	\begin{itemize}
    	\item
    	Open format
@@ -226,6 +246,15 @@ AKA Registered Reports, moves peer review before data gathering, results, and an
 \item Follow through, and nulls get published
 \end{enumerate}
 \href{https://osf.io/8mpji/wiki/home/}{14 Journals, 4 more with Special Issues \beamergotobutton{Link}}
+\end{frame}
+
+\begin{frame}{Meta-Analysis}
+\begin{itemize}
+\item Synthesize results systematically
+\item Cochrance Collaboration (medicine), Campbell Collaboration (policy), What Works Clearinghouse
+\item Funnel plots (Card \& Krueger 1995)
+\item P-curve (Simonsohn et al. 2014)
+\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Pre-Analysis Plans}
@@ -347,12 +376,14 @@ From 3ie: ``A pre-analysis plan is a detailed description of the analysis to be 
 
 \begin{itemize}[<.->]
 \item
-J-PAL Hypothesis Registry (11), see \url{http://www.povertyactionlab.org/Hypothesis-Registry}, 6 published papers:
+J-PAL Hypothesis Registry (11), see \url{http://www.povertyactionlab.org/Hypothesis-Registry}
+
+6 published papers:
 \begin{itemize}
 \item
  Sierra Leone CDD, Oregon Medicare, Turkey Job Training, El Salvador TOMS, two in Indonesia (Olken et al.)
 \end{itemize}
-\item OSF: Hawkins, Fitzgerald, Nosek---Conception Risk and Prejudice
+\item Psychology: \href{http://pss.sagepub.com/content/26/2/249}{Hawkins, Fitzgerald, Nosek---Conception Risk and Prejudice}
 \end{itemize} 
 \vspace{0.25in}
 Wide range of when exactly to write and how detailed to make the plan. At the extreme level of detail you would have your entire code already written before you got any data.

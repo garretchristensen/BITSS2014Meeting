@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  16 APR 2015 00:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  28 APR 2015 13:50
 entering extended mode
 **C:/Users/garret/Documents/Research/BITSS/WorkshopSlides/Manual_slides_CEGA.te
 x
@@ -1290,7 +1290,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
  [1{C:/Users/garret/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 129.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 131.
 
 ("C:\Program Files\MikTek\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1305,10 +1305,11 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ] [6
 
 ]
-(C:\Users\garret\Documents\Research\BITSS\WorkshopSlides\Manual_slides_CEGA.toc
-) [7
+[7
 
-] [8
+]
+(C:\Users\garret\Documents\Research\BITSS\WorkshopSlides\Manual_slides_CEGA.toc
+) [8
 
 ] [9
 
@@ -1320,29 +1321,36 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 ] [13
 
-] [14
+]
+<TurnerFigure1.PNG, id=590, 252.19218pt x 266.49562pt>
+File: TurnerFigure1.PNG Graphic file (type png)
+ <use TurnerFigure1.PNG>
+Package pdftex.def Info: TurnerFigure1.PNG used on input line 195.
+(pdftex.def)             Requested size: 258.5102pt x 273.14662pt.
 
-] [15
+[14
+
+ <C:/Users/garret/Documents/Research/BITSS/WorkshopSlides/TurnerFigure1.PNG>] [
+15
 
 ] [16
 
 ] [17
 
+] [18
+
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 216.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 236.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 216.
- [18
-
-] [19
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 236.
+ [19
 
 ] [20
 
 ] [21
 
-]
-[22
+] [22
 
 ] [23
 
@@ -1356,7 +1364,8 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [28
 
-] [29
+]
+[29
 
 ] [30
 
@@ -1372,8 +1381,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [36
 
-]
-[37
+] [37
 
 ] [38
 
@@ -1385,36 +1393,47 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [42
 
+] [43
+
+]
+[44
+
+] [45
+
+] [46
+
+] [47
+
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 467.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 467.
 
 (C:\Users\garret\Documents\Research\BITSS\WorkshopSlides\Manual_slides_CEGA.aux
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 467.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 467.
 Package rerunfilecheck Info: File `Manual_slides_CEGA.out' has not changed.
 (rerunfilecheck)             Checksum: F67E0ED6FF7241A21E86963FF9AAD68E;354.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 436.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 467.
  ) 
 Here is how much of TeX's memory you used:
- 20392 strings out of 493921
- 402343 string characters out of 3148882
- 460655 words of memory out of 3000000
- 23091 multiletter control sequences out of 15000+200000
+ 20433 strings out of 493921
+ 403138 string characters out of 3148882
+ 460662 words of memory out of 3000000
+ 23120 multiletter control sequences out of 15000+200000
  49228 words of font info for 73 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,16n,65p,782b,658s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,16n,65p,782b,705s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MikTek/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/Mi
 kTek/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MikTek/fonts/type1/ur
 w/helvetic/uhvr8a.pfb><C:/Program Files/MikTek/fonts/type1/urw/helvetic/uhvro8a
 .pfb>
-Output written on Manual_slides_CEGA.pdf (42 pages, 419097 bytes).
+Output written on Manual_slides_CEGA.pdf (47 pages, 468616 bytes).
 PDF statistics:
- 1811 PDF objects out of 2073 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1986 PDF objects out of 2073 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
